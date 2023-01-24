@@ -1,13 +1,14 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Leetcode contest PR",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Leetcode contest PR(Percentile Rank)",
 
-  "content_scripts": [{
-    "js": ["content.js"],
-    "matches": ["https://leetcode.com/contest/"]
-  }]
-
+  "content_scripts": [
+    {
+      "js": ["contest-pr.js"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
 }
